@@ -86,33 +86,33 @@ export const headerData = {
       ],
     },
     {
-      text: 'Blog',
+      text: 'Support',
       links: [
         {
-          text: 'Blog List',
-          href: getBlogPermalink(),
+          text: 'How it Works',
+          href: getPermalink('#'),
         },
         {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+          text: 'Contact Support',
+          href: getPermalink('#'),
         },
         {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
+          text: 'Help Center',
+          href: getPermalink('#'),
         },
         {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
+          text: 'Status Page',
+          href: getPermalink('#'),
         },
         {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
+          text: 'FAQ',
+          href: getPermalink('#'),
         },
       ],
     },
    
   ],
-  actions: [{ text: 'Get Wallet', href: 'https://braavos.app/', target: '_blank' }],
+  actions: [{ text: 'STAKING', href: 'https://braavos.app/', target: '_blank' }],
 };
 
 export const footerData = {
