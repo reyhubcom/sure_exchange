@@ -143,13 +143,13 @@ export const footerData = {
       ],
     },
     {
-      title: 'Support',
+      title: 'Exchange Pairs',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'BTC to ETH', href: '#' },
+        { text: 'BNB to ATOM', href: '#' },
+        { text: 'SOL to BTC', href: '#' },
+        { text: 'ATOM to BASE', href: '#' },
+        { text: 'USDC to USDT', href: '#' },
       ],
     },
     {
