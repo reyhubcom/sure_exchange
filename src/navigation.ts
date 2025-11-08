@@ -19,7 +19,7 @@ export const headerData = {
         },
         {
           text: 'All Currencies',
-          href: getPermalink('#'),
+          href: getPermalink('/allcurrencies'),
         },
       ],
     },
