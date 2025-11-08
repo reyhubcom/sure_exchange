@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Sure.Exchange
+  site: 'https://sure.exchange'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Sure.Exchange
+    template: 'Sure.Exchange'
+  description: "Buy Bitcoin and Exchange Crypto Instantly on Sure Exchange - The Lowest Cost Crypto Exchange Service. Enjoy Fast, Safe and Smooth Transactions With a Wide Range."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Sure.Exchange
     images:
       - url: '~/assets/images/default.png'
         width: 1200
@@ -69,4 +69,4 @@ analytics:
       id: null # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'system' # Values: "system" | "dark" | "dark" | "dark:only" | "dark:only"
