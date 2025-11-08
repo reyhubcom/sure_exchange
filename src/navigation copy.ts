@@ -110,7 +110,10 @@ export const headerData = {
         },
       ],
     },
-   
+    {
+      text: 'Widgets',
+      href: '#',
+    },
   ],
   actions: [{ text: 'Get Wallet', href: 'https://braavos.app/', target: '_blank' }],
 };
