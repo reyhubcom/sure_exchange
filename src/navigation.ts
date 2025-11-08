@@ -3,23 +3,23 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Exchange',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'Exchange Bitcoin [ BTC ]',
+          href: getPermalink('#'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: 'Exchange Ethereum [ ETH ]',
+          href: getPermalink('#'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
+          text: 'Exchange Solana [ SOL ]',
+          href: getPermalink('#'),
         },
         {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'All Currencies',
+          href: getPermalink('#'),
         },
       ],
     },
