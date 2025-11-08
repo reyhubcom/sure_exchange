@@ -121,15 +121,15 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Buy Crypto',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Buy Bitcoin [ BTC ]', href: '#' },
+        { text: 'Buy Ethereum [ ETH ]', href: '#' },
+        { text: 'Buy Solana [ SOL ]', href: '#' },
+        { text: 'Buy Binance [ BNB ]', href: '#' },
+        { text: 'Buy Polkadot [ DOT ]', href: '#' },
+        { text: 'Buy Cosmos [ ATOM ]', href: '#' },
+        { text: 'Buy TonCoin [ TON ]', href: '#' },
       ],
     },
     {
