@@ -24,35 +24,35 @@ export const headerData = {
       ],
     },
     {
-      text: 'Pages',
+      text: 'Buy',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
+          text: 'Buy Bitcoin [ BTC ]',
+          href: getPermalink('#'),
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
+          text: 'Buy Ethereum [ ETH ]',
+          href: getPermalink('#'),
         },
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
+          text: 'Buy Solana [ SOL ]',
+          href: getPermalink('#'),
         },
         {
-          text: 'About us',
-          href: getPermalink('/about'),
+          text: 'Buy Binance [ BNB ]',
+          href: getPermalink('#'),
         },
         {
-          text: 'Contact',
-          href: getPermalink('/contact'),
+          text: 'Bay Starknet [ STRK ]',
+          href: getPermalink('#'),
         },
         {
-          text: 'Terms',
-          href: getPermalink('/terms'),
+          text: 'Buy Cosmos [ ATOM ]',
+          href: getPermalink('#'),
         },
         {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          text: 'Buy Polkadot [ DOT ]',
+          href: getPermalink('#'),
         },
       ],
     },
