@@ -57,31 +57,31 @@ export const headerData = {
       ],
     },
     {
-      text: 'Landing',
+      text: 'Products',
       links: [
         {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
+          text: 'Sure Token',
+          href: getPermalink('#'),
         },
         {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
+          text: 'Sure Wallet',
+          href: getPermalink('#'),
         },
         {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
+          text: 'MEME Coin',
+          href: getPermalink('#'),
         },
         {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
+          text: 'DeFi Coin',
+          href: getPermalink('#'),
         },
         {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
+          text: 'Staking',
+          href: getPermalink('#'),
         },
         {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
+          text: 'Mobile Exchange',
+          href: getPermalink('#'),
         },
       ],
     },
