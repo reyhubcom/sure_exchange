@@ -133,13 +133,13 @@ export const footerData = {
       ],
     },
     {
-      title: 'Platform',
+      title: 'Exchange',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Exchange Bitcoin [ BTC ]', href: '#' },
+        { text: 'Exchange Ethereum [ ETH ]', href: '#' },
+        { text: 'Exchange Solana [ SOL ]', href: '#' },
+        { text: 'Exchange Starknet [ STRK ]', href: '#' },
+        { text: 'Exchange Cosmos [ ATOM ]', href: '#' },
       ],
     },
     {
