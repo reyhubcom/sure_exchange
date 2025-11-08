@@ -1,129 +1,37 @@
----
-import Layout from '~/layouts/PageLayout.astro';
+import { getRssString } from '@astrojs/rss';
 
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import { SITE, METADATA, APP_BLOG } from 'astrowind:config';
+import { fetchPosts } from '~/utils/blog';
+import { getPermalink } from '~/utils/permalinks';
 
-const metadata = {
-  title: 'Sure Exchange | Best Instant Crypto Exchange',
-  ignoreTitleTemplate: true,
-};
----
+export const GET = async () => {
+  if (!APP_BLOG.isEnabled) {
+    return new Response(null, {
+      status: 404,
+      statusText: 'Not found',
+    });
+  }
 
-<Layout metadata={metadata}>
-  <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=690fa3aaa1d223a1f49b6295&product=sop' async='async'></script>
-  <!-- Hero Widget ******************* -->
+  const posts = await fetchPosts();
 
-  <Hero
- 
-    actions={[
-   
-    ]}
-   
-  >
-    <Fragment slot="title">
+  const rss = await getRssString({
+    title: `${SITE.name}’s Blog`,
+    description: METADATA?.description || '',
+    site: import.meta.env.SITE,
 
-      <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
-<dotlottie-wc src="https://lottie.host/91904867-6144-4f51-b3b2-34f41b37f8f4/HTIeBdaGsH.lottie" speed="1" style="width: 100%; height: 140px" mode="forward" loop autoplay></dotlottie-wc>
+    items: posts.map((post) => ({
+      link: getPermalink(post.permalink, 'post'),
+      title: post.title,
+      description: post.excerpt,
+      pubDate: post.publishDate,
+    })),
 
-      Bitcoin <span class="hidden xl:inline"></span>
-      <span class="text-accent dark:text-white"> Price</span> 
-    </Fragment>
-
-    <Fragment slot="subtitle">
-       <CallToAction
-    actions={[
-   
-    ]}
-  >
-    <Fragment slot="title">
-     <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-5" lcw-base="USD" lcw-color-tx="#0693e3" lcw-marquee-1="coins" lcw-marquee-2="movers" lcw-marquee-items="30" ></div>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-   <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSD/?exchange=COINBASE" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a><span class="trademark"></span></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
-  {
-  "lineWidth": 2,
-  "lineType": 0,
-  "chartType": "area",
-  "fontColor": "rgb(106, 109, 120)",
-  "gridLineColor": "rgba(255, 255, 255, 0.06)",
-  "volumeUpColor": "rgba(34, 171, 148, 0.5)",
-  "volumeDownColor": "rgba(247, 82, 95, 0.5)",
-  "backgroundColor": "rgba(4, 4, 34, 1)",
-  "widgetFontColor": "rgba(255, 255, 255, 1)",
-  "upColor": "#22ab94",
-  "downColor": "#f7525f",
-  "borderUpColor": "#22ab94",
-  "borderDownColor": "#f7525f",
-  "wickUpColor": "#22ab94",
-  "wickDownColor": "#f7525f",
-  "colorTheme": "dark",
-  "isTransparent": true,
-  "locale": "en",
-  "chartOnly": false,
-  "scalePosition": "right",
-  "scaleMode": "Normal",
-  "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
-  "valuesTracking": "1",
-  "changeMode": "price-and-percent",
-  "symbols": [
-    [
-      "COINBASE:BTCUSD|1M"
-    ]
-  ],
-  "dateRanges": [
-    "1d|1",
-    "1m|30",
-    "3m|60",
-    "12m|1D",
-    "60m|1W",
-    "all|1M"
-  ],
-  "fontSize": "10",
-  "headerFontSize": "medium",
-  "autosize": false,
-  "width": "100%",
-  "height": 600,
-  "noTimeScale": false,
-  "hideDateRanges": false,
-  "hideMarketStatus": false,
-  "hideSymbolLogo": false
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-   
-
-    </Fragment>
-   
-
-  </CallToAction>
-     
-  </Hero>
-
-  
-  
-
- <script>
-  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
-
-  ChannelIO('boot', {
-    "pluginKey": "6d2c6956-44e0-44fc-a845-096c6978dc3d"
+    trailingSlash: SITE.trailingSlash,
   });
-</script>
-  
-</Layout>
+
+  return new Response(rss, {
+    headers: {
+      'Content-Type': 'application/xml',
+    },
+  });
+};
