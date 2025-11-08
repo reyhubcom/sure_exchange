@@ -115,7 +115,7 @@ export const headerData = {
       href: '#',
     },
   ],
-  actions: [{ text: 'Wallet', href: 'https://braavos.app/', target: '_blank' }],
+  actions: [{ text: 'Get Wallet', href: 'https://braavos.app/', target: '_blank' }],
 };
 
 export const footerData = {
