@@ -11,11 +11,11 @@ export const headerData = {
         },
         {
           text: 'Exchange Ethereum [ ETH ]',
-          href: getPermalink('#'),
+          href: getPermalink('/eth'),
         },
         {
           text: 'Exchange Solana [ SOL ]',
-          href: getPermalink('#'),
+          href: getPermalink('/sol'),
         },
         {
           text: 'All Currencies',
