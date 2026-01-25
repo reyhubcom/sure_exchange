@@ -69,7 +69,7 @@ export const headerData = {
         },
         {
           text: 'MEME Coin',
-          href: getPermalink(' https://nad.fun/tokens/0xf2F1C0a6321a2f0D14F099fDBe7F9302e7d57777'),
+          href: getPermalink('/meme/token'),
         },
         {
           text: 'DeFi Coin',
