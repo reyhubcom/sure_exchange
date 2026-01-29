@@ -112,7 +112,7 @@ export const headerData = {
     },
    
   ],
-  actions: [{ text: 'STAKING', href: 'https://braavos.app/', target: '_blank' }],
+  actions: [{ text: 'STAKING', href: 'https://www.gmonads.com/', target: '_blank' }],
 };
 
 export const footerData = {
